@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Search from "components/weather/search/Search";
 import WeatherResult from "components/weather/WeatherResult";
 import fetchWeather from "services/fetchWeather";
+import LoadingSpinner from "components/shared/loadingSpinner/LoadingSpinner";
 
 import "./DashboardHome.scss";
 
@@ -12,7 +13,9 @@ class DashboardHome extends Component {
   state = {
     city: "",
     countryCode: "pl",
-    weatherData: []
+    weatherData: [],
+    loading: false,
+    fallbackMsg: "No city chosen?"
   };
 
   handleChangeSearch = ev => {
@@ -31,19 +34,24 @@ class DashboardHome extends Component {
     this.setState(
       currentState => {
         return {
+          loading: true,
           city: !!currentState.city.trim() ? currentState.city : DEFAULT_CITY
         };
       },
       () => {
-        fetchWeather(this.state.city.trim(), this.state.countryCode).then(
-          weatherResp => {
+        fetchWeather(this.state.city.trim(), this.state.countryCode)
+          .then(weatherResp => {
             this.setState(() => {
               return {
-                weatherData: weatherResp
+                weatherData: weatherResp,
+                loading: false
               };
             });
-          }
-        );
+          })
+          .catch(err => {
+            console.error(err);
+            this.setState({ fallbackMsg: "City not existing in Poland" });
+          });
       }
     );
   };
@@ -63,7 +71,11 @@ class DashboardHome extends Component {
             cityName={this.state.city}
             weatherData={this.state.weatherData}
           />
-        ) : null}
+        ) : this.state.loading ? (
+          <LoadingSpinner />
+        ) : (
+          <p>{this.state.fallbackMsg}</p>
+        )}
       </>
     );
   }

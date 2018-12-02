@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-body">
-          Welcome to 5 days weather App
+          Welcome to a Weather App
           <Grid>
             <Row>
               <Col xs={12} mdOffset={1} md={10}>

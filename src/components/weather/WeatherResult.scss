@@ -1,28 +1,19 @@
-// .panel-heading {
-//     ul {
-//         list-style-type: none;
-//         padding: 0;
-//     }
-//     ul>div {
-//         display: inline-block;
-//     }
-//     ul li {
-//         text-decoration: none;
-//         cursor: pointer;
-//         padding: 7px;
-//         background: #ccc;
-//         color: #7062d8;
-//         font-size: 1.2rem;
-//     }
-// }
 .day-panel {
     cursor: pointer;
     padding: 7px;
     background: #ccc;
     color: #7062d8;
     font-size: 1.2rem;
-
+    
     .panel-body span {
         display: block;
     }
+}
+
+.panel-heading>div {
+    margin-top: 12px;
+}
+
+.panel-body {
+    margin-top: 20px;
 }

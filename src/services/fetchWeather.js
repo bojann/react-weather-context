@@ -4,7 +4,6 @@ import { WEATHER_API } from "components/enums";
 import axios from "axios";
 
 const fetchWeather = (city = "warsaw", countryCode = "pl") => {
-  console.log(city);
   const URL = `https://api.openweathermap.org/data/2.5/forecast?q=${city},${countryCode}&appid=${
     WEATHER_API.KEY
   }&units=metric`;

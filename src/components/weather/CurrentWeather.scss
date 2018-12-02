@@ -1,0 +1,13 @@
+.weather-summary {
+  background: #7ea2c9;
+  padding: 20px;
+  font-size: 1.1rem;
+  
+  &__item {
+    display: block;
+  }
+  
+  &--btn {
+    margin: 14px auto;
+  }
+}

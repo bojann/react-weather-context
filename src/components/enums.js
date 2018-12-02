@@ -3,3 +3,5 @@ export const WEATHER_API = {
 };
 //TODO: remove before push
 export const NO_DATA = "No Data";
+
+export const WEEKDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

@@ -1,8 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+IMPORTANT NOTES:
+App is missing next features:
+- Error handling by Error Boundaries , check on next link about it  https://reactjs.org/docs/error-boundaries.html
+- Routing that would make selected elements open in next "page" with more detailed description<br>
+ Planned to implement Reach-router, link https://reach.tech/router
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm format`
+App uses from package "prettier" that formats whole app.
+
+### `npm lint`
+
+App uses es-lint and if you want to run it manually use 'nom lint'
+
 
 ### `npm start`
 
@@ -15,7 +29,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Test's are not yet implemented to this project.
 
 ### `npm run build`
 
