@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-IMPORTANT NOTES:
+##IMPORTANT NOTES:
+
+You will need API key for request to OpenWeatherMap forecast API 
+
 App is missing next features:
 - Error handling by Error Boundaries , check on next link about it  https://reactjs.org/docs/error-boundaries.html
 - Routing that would make selected elements open in next "page" with more detailed description<br>
