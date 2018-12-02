@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-
-import './WeatherDetails.scss'
+import "./WeatherDetails.scss";
 
 class WeatherDetails extends Component {
-
   render() {
-    return(
-      <>
-      </>
-    )
+    return <></>;
   }
 }
 
