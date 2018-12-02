@@ -5,6 +5,7 @@ App is missing next features:
 - Error handling by Error Boundaries , check on next link about it  https://reactjs.org/docs/error-boundaries.html
 - Routing that would make selected elements open in next "page" with more detailed description<br>
  Planned to implement Reach-router, link https://reach.tech/router
+- App not fully responsive 
 
 ## Available Scripts
 
