@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## IMPORTANT NOTES:
 
-### `API key will be canceled in a few days`
+### `API key for requests will be canceled in a few days`
 
-App is missing next features:
+App is missing next:
 - Error handling by Error Boundaries , check on next link about it  https://reactjs.org/docs/error-boundaries.html
 - Routing that would make selected elements open in next "page" with more detailed description<br>
  Planned to implement Reach-router, link https://reach.tech/router
@@ -13,8 +13,9 @@ App is missing next features:
 - clicking on the any of the offered days will not do anything
 
 ### `Thought process`
-I wanted that App uses context for communitation between components such as main parent component and children containing detailed hourly information about the weather. By using router I would devide screen into MAIN(Dashboard) and HOURLY. As my future private plan for this APP I will add requests for few other popular weather portals that have API and will sum their result and get show the most common weathercast that happens.
-For CSS codying style I was direct more into BEM methodoligy. Even though this is a small project, I think that good habbits are good if they are used if not all of the time, at least the most of the time.
+I wanted that App uses context for communitation between components such as main parent component and children containing detailed hourly information about the weather. By using router I would devide screen into MAIN(Dashboard) and HOURLY. As my future private plan for this APP I will add requests for few other popular weather portals that have API and will sum their result and show the most common weathercast. Also I wanted that user doesn't get too much of information of first sight because at the end, a common user wants to know 2 most important things about the day:  temperature and if it will be Sunny or not. In case of travelers they will can see graphic with some plan week changes.
+For CSS coding style I was directed more into BEM methodoligy. Even though this is a small project, I think that good habbits are good if used all of the time, or at least the most of the time.
+In case of tests I would add in future Unit test and possible Integration test. All with Jest and Enzyme.
 
 ## Available Scripts
 
