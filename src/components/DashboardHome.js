@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from "react";
 
 import Search from "components/weather/search/Search";
@@ -27,6 +28,7 @@ class DashboardHome extends Component {
       };
     });
   };
+  
 
   handleSubmitForm = ev => {
     ev.preventDefault();

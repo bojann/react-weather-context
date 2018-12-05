@@ -19,6 +19,8 @@ const WeatherResult = ({ weatherData, cityName }) => {
       const itemDateConverted = new Date(item.dt_txt).toLocaleDateString();
       if (itemDateConverted.indexOf(CURRENT_DATE_FORMATED) === -1) {
         return itemDateConverted;
+      } else {
+        return false;
       }
     })
     .filter(Boolean);
@@ -27,12 +29,7 @@ const WeatherResult = ({ weatherData, cityName }) => {
   const filterMinMaxTemp = () => {
     return weatherList.filter(item => {
       const itemDateConverted = new Date(item.dt_txt).toLocaleString();
-      if (
-        itemDateConverted.indexOf(MIDDLE_TIME) !== -1 &&
-        itemDateConverted.indexOf(CURRENT_DATE_FORMATED) === -1
-      ) {
-        return item;
-      }
+      return itemDateConverted.indexOf(MIDDLE_TIME) !== -1 && itemDateConverted.indexOf(CURRENT_DATE_FORMATED) === -1;
     });
   };
 
